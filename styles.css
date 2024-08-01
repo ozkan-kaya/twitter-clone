@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Archivo,TwitterChirpExtendedHeavy,Verdana,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 50px 50px 60px;
+}
+
+.x-logo{
+    width: 320px;
+    height: 320px;
+}
+
+.left-section{
+    width: 50%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 180px;
+}
+.right-section {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    color: white;
+    margin-bottom: -60px;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+button:hover{
+    transition: opacity 0.15s;
+    opacity: 0.9;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+.apple-button{
+    font-weight: 700;
+}
+
+.sign-up-google, .sign-up-apple{
+    width: 298px;
+    height: 38px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.google-logo, .apple-logo{
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.create-acc-button, .sign-in-button{
+    width: 298px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.create-acc-button{
+    color: white;
+    background-color: #0098f8;
+}
+
+.sign-in-button{
+    color: #0098f8;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.right-section h1{
+    font-size: 64px;
+    margin-left: -3px;
+    margin-bottom: 20px;
+}
+
+.right-section h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.divider-line {
+    width: 298px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.divider-line::before, .divider-line::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 20px 5px 20px 5px;
+}
+
+.right-section p{
+    margin: 0 0 30px 0;
+    width: 298px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+}
+
+.links{
+    color: #0098f8;
+}
+
+.links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    margin: 0 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+nav a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(99,99,99);
+    margin-right: 12px;
+    margin-bottom: 8px;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+label{
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .x-logo {
+        height: unset;
+        width: 75px;
+        justify-content: flex-start;
+    }
+    main {
+        flex-direction: column;
+        max-width: 700px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .left-section {
+        height: 20vh;
+        width: 50px;
+    }
+
+    .sign-in-button{
+        margin-bottom: 75px;
+    }
+}
